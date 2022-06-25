@@ -38,6 +38,7 @@ Basically, the installations contains a few steps.
 3. Starting the server.
 
 ### Step by Step Installation Commands
+The commands below will download the service file, download the jar file, enable the server during system boot, starts the server and connects to the screen session.
 ```
 cd /etc/systemd/system
 wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service
@@ -50,3 +51,8 @@ systemctl enable minecraft-serer
 systemctl start minecraft-server
 screen -r MinecraftServer
 ```
+
+## Interact with the Server
+To start the server, simply use `systemctl start minecraft-server`. To stop the server, simply use `systemctl stop minecraft-server`. In order to enable or disable the server to start during boot, use `systemctl disable minecraft-server` to disable the server during boot, use `systemctl enable minecraft-server` to enable the server during boot.
+
+To connect to the server and be able to use server commands, use `screen -r MinecraftServer`. Use `Control + A + D` to disconnect.
