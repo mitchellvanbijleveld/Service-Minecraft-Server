@@ -12,12 +12,14 @@ Basically, the installations contains a few steps.
 3. Starting the server.
 
 ### Step by Step Installation Commands
-1. `cd /etc/systemd/system`
-2. `wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service`
-3. `mkdir /etc/minecraft-server`
-4. `cd /etc/minecraft-server`
-5. `wget xxxx`
-6. `echo "eula=true" > eula.txt`
-7. `systemctl enable minecraft-serer`
-8. `systemctl start minecraft-server`
-9. `screen -r MinecraftServer`
+```
+cd /etc/systemd/system
+wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service
+mkdir /etc/minecraft-server
+cd /etc/minecraft-server
+wget -O minecraft_server.1.19.jar https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar
+echo "eula=true" > eula.txt
+systemctl enable minecraft-serer
+systemctl start minecraft-server
+screen -r MinecraftServer
+```
