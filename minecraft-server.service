@@ -1,1 +1,13 @@
+[Unit]
+Description=Java Minecraft Server (V1.19) as a Systemd/System Service!
+After=network-online.target
 
+[Service]
+Type=forking
+WorkingDirectory=/etc/minecraft-server/
+KillMode=none
+ExecStart=/usr/bin/screen -dmS MinecraftServer /usr/bin/java -Xmx1024M -Xms1024M -jar /etc/minecraft-server/minecraft_server.1.19.jar --nogui
+ExecStop=/usr/bin/screen -S MinecraftServer -X stuff "stop^M"
+
+[Install]
+WantedBy=multi-user.target
