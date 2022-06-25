@@ -19,6 +19,7 @@ mkdir /etc/minecraft-server
 cd /etc/minecraft-server
 wget -O minecraft_server.1.19.jar https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar
 echo "eula=true" > eula.txt
+systemctl daemon-reload
 systemctl enable minecraft-serer
 systemctl start minecraft-server
 screen -r MinecraftServer
