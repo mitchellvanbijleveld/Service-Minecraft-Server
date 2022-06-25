@@ -2,15 +2,14 @@
 Minecraft Server that runs behind a screen session and starts at system startup.
 
 ## Prerequisites
-- Java openJDK 17 is installed
+- Java JRE 17 is installed
 - Screen is installed
 
 ## Installation
-1. Create directory /etc/minecraft-server
-2. `cd` into /etc/minecraft-server
-3. download latest minecraft server jar
-4. `systemctl enable minecraft-server`
-5. `systemctl start minecraft-server`
+Basically, the installations contains a few steps.
+1. Setting up the service file;
+2. Preparing the folder for storing all data related to the Minecraft Server;
+3. Starting the server.
 
 ### Step by Step Installation Commands
 1. `cd /etc/systemd/system`
