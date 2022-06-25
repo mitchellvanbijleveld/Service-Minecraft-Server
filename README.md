@@ -8,20 +8,28 @@ Installation of Prerequisites
 Java Runtime is needed in order to execute the server command.
 
 #### Ubuntu/Debian
-`apt-get install openjdk-17-jre -y`
+```
+apt-get install openjdk-17-jre -y
+```
 
 #### CentOS/AlmaLinux/RockyLinux
-`dnf install java-17 -y`
+```
+dnf install java-17 -y
+```
 
 ### Screen
 Screen is used for being able to interact with the server. It's kind off a second shell which you can connect to.
 
 #### Ubuntu/Debian
-`apt-get install screen -y`
+```
+apt-get install screen -y
+```
 
 #### CentOS/AlmaLinux/RockyLinux
 Epel Release contains the screen package. Install epel-release by `dnf install epel-release -y`
-`dnf install screen -y`
+```
+dnf install screen -y
+```
 
 ## Installation
 Basically, the installations contains a few steps.
