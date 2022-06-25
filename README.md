@@ -13,7 +13,7 @@ Basically, the installations contains a few steps.
 
 ### Step by Step Installation Commands
 1. `cd /etc/systemd/system`
-2. `https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service`
+2. `wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service`
 3. `mkdir /etc/minecraft-server`
 4. `cd /etc/minecraft-server`
 5. `wget xxxx`
