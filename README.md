@@ -20,6 +20,7 @@ Screen is used for being able to interact with the server. It's kind off a secon
 `apt-get install screen -y`
 
 #### CentOS/AlmaLinux/RockyLinux
+Epel Release contains the screen package. Install epel-release by `dnf install epel-release -y`
 `dnf install screen -y`
 
 ## Installation
