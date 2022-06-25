@@ -14,7 +14,7 @@ Minecraft Server that runs behind a screen session and starts at system startup.
 
 ### Step by Step Installation Commands
 1. `cd /etc/systemd/system`
-2. `wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/3b70dad51c0c803b975adcc09b010a20769323ff/minecraft-server.service` 
+2. `https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service`
 3. `mkdir /etc/minecraft-server`
 4. `cd /etc/minecraft-server`
 5. `wget xxxx`
