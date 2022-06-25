@@ -56,3 +56,6 @@ screen -r MinecraftServer
 To start the server, simply use `systemctl start minecraft-server`. To stop the server, simply use `systemctl stop minecraft-server`. In order to enable or disable the server to start during boot, use `systemctl disable minecraft-server` to disable the server during boot, use `systemctl enable minecraft-server` to enable the server during boot.
 
 To connect to the server and be able to use server commands, use `screen -r MinecraftServer`. Use `Control + A + D` to disconnect.
+
+## To Do
+- Creating installation script.
