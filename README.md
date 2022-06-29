@@ -9,12 +9,12 @@ Java Runtime is needed in order to execute the server command.
 
 #### Ubuntu/Debian
 ```
-apt-get install openjdk-17-jre -y
+sudo apt-get install openjdk-17-jre -y
 ```
 
 #### CentOS/AlmaLinux/RockyLinux
 ```
-dnf install java-17 -y
+sudo dnf install java-17 -y
 ```
 
 ### Screen
@@ -22,13 +22,13 @@ Screen is used for being able to interact with the server. It's kind off a secon
 
 #### Ubuntu/Debian
 ```
-apt-get install screen -y
+sudo apt-get install screen -y
 ```
 
 #### CentOS/AlmaLinux/RockyLinux
 Epel Release contains the screen package. Install epel-release by `dnf install epel-release -y`
 ```
-dnf install screen -y
+sudo dnf install screen -y
 ```
 
 ## Installation
@@ -46,16 +46,39 @@ mkdir /etc/minecraft-server
 cd /etc/minecraft-server
 wget -O minecraft_server.1.19.jar https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar
 echo "eula=true" > eula.txt
-systemctl daemon-reload
-systemctl enable minecraft-serer
-systemctl start minecraft-server
+sudo systemctl daemon-reload
+sudo systemctl enable minecraft-serer
+sudo systemctl start minecraft-server
 screen -r MinecraftServer
 ```
 
 ## Interact with the Server
-To start the server, simply use `systemctl start minecraft-server`. To stop the server, simply use `systemctl stop minecraft-server`. In order to enable or disable the server to start during boot, use `systemctl disable minecraft-server` to disable the server during boot, use `systemctl enable minecraft-server` to enable the server during boot.
+### Starting the server
+```
+sudo systemctl start minecraft-server
+```
 
-To connect to the server and be able to use server commands, use `screen -r MinecraftServer`. Use `Control + A + D` to disconnect.
+### Stopping the server
+```
+sudo systemctl stop minecraft-server
+```
+
+### Connect to Screen session
+```
+screen -r MinecraftServer
+```
+
+To disconnect, pres `Control` + `AD`.
+
+### Enable Server on boot
+```
+sudo systemctl enable minecraft-server
+```
+
+### Disable Server on boot
+```
+sudo systemctl disable minecraft-server
+```
 
 ## To Do
 - Creating installation script.
