@@ -1,4 +1,4 @@
-# Service-MinecraftServer
+# Service-Minecraft-Server
 Minecraft Server that runs behind a screen session and starts at system startup.
 
 ## Install Prerequisites
