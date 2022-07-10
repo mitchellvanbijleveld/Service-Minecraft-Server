@@ -41,7 +41,7 @@ Basically, the installations contains a few steps.
 The commands below will download the service file, download the jar file, enable the server during system boot, starts the server and connects to the screen session.
 ```
 cd /etc/systemd/system
-wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-MinecraftServer/main/minecraft-server.service
+wget https://raw.githubusercontent.com/mitchellvanbijleveld/Service-Minecraft-Server/main/minecraft-server.service
 mkdir /etc/minecraft-server
 cd /etc/minecraft-server
 wget -O minecraft_server.1.19.jar https://launcher.mojang.com/v1/objects/e00c4052dac1d59a1188b2aa9d5a87113aaf1122/server.jar
